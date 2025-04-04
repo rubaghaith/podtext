@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* الشريط الجانبي */
+.sideba {
+    width: 250px;
+    background: #012970;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    right: 10px;
+    top: 0;
+    height: 100vh;
+    border-radius: 10px 0 0 10px;
+}
+
+/* شعار التطبيق */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* القائمة الجانبية */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    padding-right: 15px;
+}
+
+.sidebar-link.active {
+    background: #014a9c;
+}
+
+/* المحتوى الرئيسي */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-right: 270px;
+    width: calc(100% - 270px);
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* الشريط العلوي */
+.top-ba {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 270px;
+    z-index: 1000;
+}
+
+/* شريط البحث */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.search-icon {
+    color: #0056b3;
+    font-size: 18px;
+    margin-left: 10px;
+}
+/* إضافة خلفية شفافة عند فتح المودال */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* لون رمادي غامق مع شفافية */
+  z-index: 2500; /* تحت المودال ولكن فوق كل شيء آخر */
+}
+
+/* تحسين تصميم المودال */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; /* تكبير النافذة */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 5000; /* فوق الخلفية */
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.modal input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal button {
+  width: 90%;
+  padding: 10px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal button:hover {
+  background: #1b5fcf;
+}
+
+
+.add-file-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* زر الإضافة */
+.add-file-button {
+    background-color: #0056b3;
+    margin-right: auto;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.add-file-button:hover {
+    background-color: #004494;
+}
+
+/* عنوان القائمة */
+.table-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ضبط عرض الجدول ليأخذ 100% من مساحة المحتوى */
+table {
+    width: 100%; /*  جعل الجدول يأخذ عرض الشاشة */
+    border-collapse: collapse;
+    background-color: white;
+  }
+  /* تأكد أن الجدول يكون قابل للتمدد */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* تعديل رؤوس الجدول لجعلها متناسقة مع العرض الجديد */
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #0d47a1; /*  لون داكن للرؤوس */
+    color: white;
+  }
+  
+/* زيادة ارتفاع الصفوف */
+tr {
+    height: 60px; /* زيادة ارتفاع كل صف */
+}
+/* تحسين مظهر زر إضافة ملف */
+.add-file-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /*  ضبط زر الإضافة ليكون على اليسار */
+  }
+  
+  .add-file-button {
+    background-color: #0d47a1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+  }
+  
+  .add-file-button:hover {
+    background-color: #08306b;
+  }
+/* تحسين ألوان الحالة */
+.pending {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.completed {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* أيقونات العمليات */
+.actions .icon {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 20px; /* تكبير الأيقونات */
+}
+
+.view {
+    color: #17a2b8;
+}
+
+.edit {
+    color: #ffc107;
+}
+
+.delete {
+    color: #dc3545;
+}
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .sidebar-nav {
+    width: 100%;
+  }
+  
+  .sidebar-link {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar-link.active {
+    background-color: #34495e;
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  

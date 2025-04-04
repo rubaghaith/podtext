@@ -1,0 +1,184 @@
+/* الحاوية الرئيسية */
+.file-upload-container {
+  display: flex;
+  flex-direction: row-reverse; 
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+  width: 250px;
+  background: #012970;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: #014a9c;
+}
+
+/* المحتوى الرئيسي */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* شريط البحث */
+.top-bar {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-left: 8px;
+  flex-grow: 1;
+}
+
+.search-icon {
+  color: #666;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #012970;
+  text-align: center; 
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-field {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.upload-area {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px dashed #012970;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-area:hover {
+  background: #e0e0e0;
+}
+
+.upload-icon {
+  color: #012970;
+}
+
+.upload-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.submit-button {
+  background: #012970;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background: #014a9c;
+}
+
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #333;
+}

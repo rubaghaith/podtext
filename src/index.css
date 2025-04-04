@@ -1,0 +1,96 @@
+/* تهيئة عامة للصفحة */
+body {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة الحشو الافتراضية */
+  font-family: Arial, sans-serif; /* خط افتراضي */
+  direction: rtl; /* اتجاه النص من اليمين لليسار */
+  text-align: right; /* محاذاة النص لليمين */
+  background-color: #f9f9f9; /* لون خلفية الصفحة */
+  color: #333; /* لون النص الافتراضي */
+}
+
+/* تهيئة العنصر الجذر للتطبيق */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* لجعل العنصر يمتد على طول الصفحة */
+}
+
+/* تهيئة الروابط */
+a {
+  text-decoration: none; /* إزالة الخط التحتي من الروابط */
+  color: inherit; /* استخدام لون النص الافتراضي للروابط */
+}
+
+/* تهيئة الأزرار */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* لون خلفية الزر */
+  color: white; /* لون نص الزر */
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45a049; /* لون خلفية الزر عند التمرير */
+}
+
+/* تهيئة العناوين */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* إزالة الهوامش الافتراضية للعناوين */
+  padding: 0; /* إزالة الحشو الافتراضية للعناوين */
+}
+
+/* تهيئة النصوص */
+p {
+  margin: 0; /* إزالة الهوامش الافتراضية للفقرات */
+  padding: 0; /* إزالة الحشو الافتراضية للفقرات */
+  line-height: 1.6; /* زيادة تباعد الأسطر */
+}
+
+/* تهيئة الصور */
+img {
+  max-width: 100%; /* جعل الصور تستجيب للعرض */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+/* تهيئة القوائم */
+ul, ol {
+  margin: 0; /* إزالة الهوامش الافتراضية للقوائم */
+  padding: 0; /* إزالة الحشو الافتراضية للقوائم */
+  list-style: none; /* إزالة النقاط أو الأرقام من القوائم */
+}
+
+/* تهيئة العناصر العامة */
+.container {
+  width: 100%;
+ /* max-width: 1200px; /* تحديد عرض أقصى للعناصر */
+  margin: 0 auto; /* توسيط العناصر */
+  padding: 20px; /* إضافة حشو داخلي */
+}
+
+/* تهيئة الأقسام */
+section {
+  padding: 40px 0; /* إضافة حشو داخلي للأقسام */
+}
+
+/* تهيئة الألوان */
+.primary-color {
+  color: #4CAF50; /* لون رئيسي */
+}
+
+.secondary-color {
+  color: #333; /* لون ثانوي */
+}
+
+/* تهيئة الخلفيات */
+.bg-primary {
+  background-color: #4CAF50; /* خلفية رئيسية */
+}
+
+.bg-secondary {
+  background-color: #f4f4f4; /* خلفية ثانوية */
+}

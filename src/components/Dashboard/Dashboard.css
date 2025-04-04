@@ -1,0 +1,173 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 150vw;
+  background-color: #ecf0f1;
+ 
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo-container {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100px;
+  justify-content:center;
+  padding: 10px;
+  margin-left: -7px;
+ 
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin-top: -20px;
+  margin-left: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 0;
+  flex-grow: 1;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  background-color: #34495e;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+ 
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width:  1750px;
+  margin-right: -355px;
+  margin-top: 20px;
+  width: 10000000px;
+  padding: 20px;
+  
+}
+
+.search-container {
+  display: flex;
+  align-items: left;
+  width: 235px;
+  justify-content:space-between;
+}
+
+.search-box {
+  padding: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  width: 175px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+ 
+}
+
+.blue-box {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stat-image {
+  width: 45%;
+  height: auto;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-image {
+  width: 90%; 
+  height: auto;
+}
+
+.add-file {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.add-file svg {
+  margin-right: 5px;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}

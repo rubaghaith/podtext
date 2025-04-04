@@ -1,0 +1,49 @@
+.features {
+  text-align: center;
+  padding: 20px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+p {
+  font-size: 100px;
+  text-align: right;
+  font-size: xx-large;
+  margin-left: 15px;
+
+
+}
+.feature {
+  flex: 1;
+  margin: 20px;
+  max-width: 30%; 
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+h2{
+  font-weight: bold; 
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-left: 900px;
+  
+}
+.feature p {
+  font-size: 1rem;
+  line-height: 1.5;
+ text-align: center;
+}
+.ta{
+ width: 40px;
+}

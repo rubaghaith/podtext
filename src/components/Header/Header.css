@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 100px;
+  /* position: fixed; */
+}
+
+.logo-container {
+  display: flex;
+  text-align: left;
+  margin-right:300px ;
+  margin-top: 4px;
+  justify-content: flex-end;
+  margin-right: -20px;
+}
+
+.logo {
+  width: 20px; 
+  height: auto ; 
+  cursor: pointer;
+  align-items: left;
+  margin-right: 20px;
+}
+ .link {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 2rem;
+ }
+.logo-text {
+  display: flex;
+  gap: 15px; 
+  font-size: 1.2rem; 
+  font-weight: bold; 
+margin-top: 10px;
+align-items: center;
+margin-right: auto;
+margin-left: 200px;
+white-space: nowrap;
+}
+
+.logo-text a {
+  color: #333; 
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 2rem;
+}
+
+.auth-buttons {
+  display: flex; 
+  align-items: center;
+  gap: 10px; 
+  margin-right: 20px;
+margin-left: 250px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  min-width: 140px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  white-space: nowrap; 
+}
+.btn.login {
+  
+  background-color: #007BFF;
+  color: white;
+}
+
+.btn.signup {
+  background-color: #333;
+  color: white;
+}
